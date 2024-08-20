@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Admin Page";
+}
+
+<form method="post" asp-action="AddCategoryData">
+    <fieldset>
+        <legend>Add Category</legend>
+        <div>
+            <label class="form-label mt-4" for="Name">Category Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Name">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+    </fieldset>
+</form>
+
+<form method="post" asp-action="AddDeviceData">
+    <fieldset>
+        <legend>Add Device</legend>
+        <div>
+            <label class="form-label mt-4" for="Name">Device Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Name">
+        </div>
+        <br />
+        <div>
+            <label class="form-label mt-4" for="Name">Icon</label>
+            <input type="text" class="form-control" id="Icon" name="Icon" placeholder="Enter Icon code ex:<i class=fa-solid fa-code> </i>">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+    </fieldset>
+</form>
